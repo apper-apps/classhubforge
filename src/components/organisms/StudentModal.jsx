@@ -135,12 +135,8 @@ if (!formData.first_name_c.trim()) {
       newErrors.date_of_birth_c = "Date of birth is required";
     }
 
-    if (!formData.grade_level_c) {
+if (!formData.grade_level_c) {
       newErrors.grade_level_c = "Grade level is required";
-    }
-
-    if (!formData.academic_year_c) {
-      newErrors.academic_year_c = "Academic year is required";
     }
 
     if (formData.marks_c && (isNaN(formData.marks_c) || formData.marks_c < 0 || formData.marks_c > 100)) {
